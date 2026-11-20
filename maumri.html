@@ -58,6 +58,40 @@ dialog{width:min(760px,95vw);padding:28px}.editor-actions{bottom:-28px;padding:1
 .stats{margin:18px 0;gap:12px}.stat{padding:18px}.stats .number{font-size:32px}.subject-drawer{margin:0;width:min(300px,calc(100vw - 24px))}
 @media(max-width:800px){header{flex-wrap:wrap;padding:15px}header small{display:none}header nav{flex-wrap:wrap;width:auto}header nav button{font-size:12px;padding:10px 16px}main{padding:28px 16px}.layout{grid-template-columns:1fr}.card{padding:20px}h1{font-size:29px}.question{font-size:18px}.fields{grid-template-columns:1fr}.stats{grid-template-columns:repeat(3,minmax(0,1fr))}.stat{padding:12px}.stats .number{font-size:26px}}
 @media(max-width:600px){#editor{padding:20px}#editor .editor-actions{bottom:-20px}}
+</style><style id="shared-detail-theme">
+html:root{font-size:15px;color-scheme:light;background:#111}
+html body{margin:0;background:#111;color:#f3f6f4;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR","Malgun Gothic",Arial,sans-serif!important;font-size:15px;line-height:1.7}
+body>header{box-sizing:border-box;min-height:84px;padding:20px 5%;display:flex;align-items:center;gap:18px;background:#fff;color:#21322e;border-bottom:1px solid #e2e7df}
+body>header #brand,body>header>strong{font-size:19px;line-height:1.5;letter-spacing:0;white-space:nowrap}
+body>header #brand span,body>header>strong span{display:inline;font-size:inherit;font-weight:400;color:inherit}
+body>header>span,body>header>small{flex:1;color:#7a8780;font-size:13px;line-height:1.5}
+body>header nav{display:flex;gap:8px;margin-left:auto;flex-wrap:wrap;width:auto}
+button,input,textarea,select,.button{font-family:inherit;font-size:15px;line-height:1.5}
+button,.button{padding:10px 16px;border:1px solid #d7dfd7;border-radius:9px;background:#fff;color:#21322e}
+button.primary,.primary{background:#285b45;color:#fff;border-color:#285b45}
+button.active,header button[aria-current=page]{background:#e2eddf;border-color:#285b45}
+main#app{box-sizing:border-box;width:100%;max-width:1160px;margin:0 auto;padding:48px 28px;color:#f3f6f4}
+#app>.eyebrow{display:block;line-height:20px;font-size:12px;letter-spacing:2px;font-weight:700;color:#88ad95}
+#app>h1{font-size:36px;font-weight:700;line-height:1.3;letter-spacing:-1.5px;margin:12px 0 18px;color:#f3f6f4}
+#app>p.muted{color:#b5c5bb;font-size:15px;line-height:26px;margin:0;min-height:52px}
+#app>.layout{margin-top:32px;display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:28px;align-items:start}
+.card,.stat{background:#fff;color:#21322e;border:1px solid #dce4da;border-radius:18px}
+.card{padding:26px;margin-bottom:18px}
+.card h2{font-size:22px;line-height:1.4;font-weight:700;margin:18px 0;color:#21322e}
+.card h3{font-size:17px;line-height:1.5;font-weight:700;color:#21322e}
+.card .eyebrow{font-size:12px;line-height:20px;letter-spacing:2px;color:#52765e}
+.card .muted,.stat .muted{font-size:14px;line-height:1.7;color:#586d60}
+.chapter{display:flex;align-items:flex-start;gap:16px;padding:20px 0;border-bottom:1px solid #edf0ea;min-height:101px}
+.chapter:last-child{border-bottom:0}.chapter h3{margin:0 0 8px}.chapter p{margin:6px 0}
+.chapter input[type=checkbox]{width:19px;height:19px;flex:0 0 19px;margin:3px 0 0;padding:0;accent-color:#285b45}
+.tag{font-size:12px;line-height:1.5;padding:5px 9px;border-radius:6px;color:#476b43;background:#e9f1e7}.tag.warning{background:#fff2d5;color:#805e14}
+.card label{font-size:15px;line-height:1.5;margin:12px 0 6px}
+.card input:not([type=checkbox]):not([type=radio]),.card select,.card textarea{font:inherit;width:100%;padding:11px;border:1px solid #becfbe;border-radius:8px;color:#21322e;background:#fff}
+.card .check{margin:16px 0;gap:10px}.card .check label{margin:0}
+.question{font-size:20px;line-height:1.9;margin:24px 0}.option{padding:17px;margin:6px 0;line-height:1.6}
+#app footer{color:#b5c5bb;font-size:12px;line-height:1.8}.card footer{color:#586d60}
+.subject-bar{line-height:1.5}.subject-toggle{font-size:16px;line-height:24px}
+@media(max-width:800px){body>header{padding:15px;flex-wrap:wrap;gap:12px}body>header>small,body>header>span{display:none}body>header nav{margin-left:0;width:100%}body>header nav button{font-size:14px;padding:9px 12px}main#app{padding:28px 16px}#app>h1{font-size:29px}#app>.layout{grid-template-columns:1fr}.card{padding:20px}.question{font-size:18px}}
 </style></head><body><div class="subject-bar" id="subject-bar"><button type="button" class="subject-toggle" id="subject-toggle" aria-label="과목 메뉴" aria-expanded="false" aria-controls="subject-drawer"><span aria-hidden="true">☰</span> 과목 메뉴</button><nav class="subject-drawer" id="subject-drawer" aria-label="과목 이동" hidden><a href="./index.html?v=menu1">전체 과목</a><a href="./biology.html?v=menu1">생명과학</a><a href="./maumri.html?v=menu1" aria-current="page">마움리</a></nav></div>
 <header><strong>마움리 <span style="font-weight:400">문제은행</span></strong><small>마음을 움직이는 리더십</small><nav aria-label="주 메뉴"><button data-nav="home">학습하기</button><button data-nav="bank">문항 관리</button><button data-nav="review">답안 검토</button><button data-nav="backup">백업</button></nav></header>
 <main id="app"></main><dialog id="editor"></dialog><dialog id="lightbox"><button onclick="this.closest('dialog').close()">닫기</button><img alt="문제 이미지 확대"></dialog><div id="toast" role="status" hidden></div>
